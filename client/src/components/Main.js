@@ -1,10 +1,15 @@
+//import dependencies
 import React, { useContext } from 'react'
 import { Switch, Route } from 'react-router-dom'
+
+//import components
 import Login from './Login'
 import ProductList from './ProductList'
 import MyAccount from './MyAccount'
 import Purchase from './Purchase'
 import SignUp from './SignUp'
+
+//import context
 import { LoginContext } from '../contexts/LoginContextProvider'
 
 const Main = () => {

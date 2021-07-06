@@ -1,7 +1,10 @@
+//import dependencies
 import React, { createContext, useState, useContext } from 'react'
 import axios from 'axios'
-import { LoginContext } from '../contexts/LoginContextProvider'
 import { useHistory } from 'react-router-dom'
+
+//import context
+import { LoginContext } from '../contexts/LoginContextProvider'
 
 export const CartContext = createContext()
 
