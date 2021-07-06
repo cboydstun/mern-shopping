@@ -1,5 +1,5 @@
 import React, { createContext, useState } from 'react'
-import Axios from 'axios'
+import axios from 'axios'
 
 export const LoginContext = createContext()
 
@@ -14,7 +14,7 @@ const LoginContextProvider = (props) => {
 	}
 
 	const login = () => {
-		Axios.post('/user/login', {
+		axios.post('/user/login', {
 			userName,
 			password,
 		}).then((res) => {

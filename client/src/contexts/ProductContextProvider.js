@@ -1,5 +1,5 @@
 import React, { createContext, useState, useEffect } from 'react'
-import Axios from 'axios'
+import axios from 'axios'
 
 export const ProductContext = createContext()
 
@@ -12,13 +12,13 @@ const ProductContextProvider = (props) => {
 	}, [])
 
 	const getProducts = () => {
-		Axios.get('/product/getAll', {}).then((res) => {
+		axios.get('/product/getAll', {}).then((res) => {
 			setProductList(res.data)
 		})
 	}
 
 	const productSearch = () => {
-		Axios.get(`/product/search/${searchVal}`, {}).then(
+		axios.get(`/product/search/${searchVal}`, {}).then(
 			(res) => {
 				setProductList(res.data)
 			}

@@ -1,6 +1,6 @@
 import React, { createContext, useState, useContext } from 'react'
 import { useHistory } from 'react-router-dom'
-import Axios from 'axios'
+import axios from 'axios'
 import { LoginContext } from '../contexts/LoginContextProvider'
 
 export const RegisterContext = createContext()
@@ -22,7 +22,7 @@ const RegisterContextProvider = (props) => {
 	}
 
 	const register = async () => {
-		await Axios.post('/user/checkUserName', {
+		await axios.post('/user/checkUserName', {
 			userName,
 		}).then((res) => {
 			if (res.data) {
@@ -40,7 +40,7 @@ const RegisterContextProvider = (props) => {
 			alert('username taken')
 			return
 		} else {
-			Axios.post('/user/register', {
+			axios.post('/user/register', {
 				userName,
 				password,
 				firstName,

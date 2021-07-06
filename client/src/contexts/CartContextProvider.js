@@ -1,5 +1,5 @@
 import React, { createContext, useState, useContext } from 'react'
-import Axios from 'axios'
+import axios from 'axios'
 import { LoginContext } from '../contexts/LoginContextProvider'
 import { useHistory } from 'react-router-dom'
 
@@ -19,7 +19,7 @@ const CartContextProvider = (props) => {
 			return prev + cur.price * cur.qty
 		}, 0)
 
-		Axios.post(`/order/create/`, {
+		axios.post(`/order/create/`, {
 			userID: userID,
 			products: cartItems,
 			total: total,
@@ -39,7 +39,7 @@ const CartContextProvider = (props) => {
 	}, 0)
 
 	const addToCart = (product) => {
-		Axios.get(
+		axios.get(
 			`/product/getById/${product._id}`,
 			{}
 		).then((res) => {
