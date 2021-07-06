@@ -13,6 +13,7 @@ import RegisterContext from './contexts/RegisterUserContextProvider'
 //import styling
 import './App.css'
 
+//SPRINT CHALLENGE - combine all of the contexts using reducers
 function App() {
 	return (
 		<div className='App'>
