@@ -24,7 +24,7 @@ const CartContextProvider = (props) => {
 			products: cartItems,
 			total: total,
 		}).then((res) => {})
-
+		//opportunity for STRETCH goal - add order persistence to database
 		alert('order completed')
 		setCartItems([])
 		history.push('/')
@@ -76,7 +76,6 @@ const CartContextProvider = (props) => {
 			setCartItems(cartItems.filter((x) => x._id !== product._id))
 		} else {
 			// just decrease the qty to -= 1
-
 			setCartItems(
 				cartItems.map((x) =>
 					x._id === product._id ? { ...exist, qty: exist.qty - 1 } : x
