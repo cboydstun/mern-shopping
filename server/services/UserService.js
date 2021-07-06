@@ -25,7 +25,6 @@ const register = async (req, res) => {
         password: req.body.password,
         email: req.body.email,
         name: req.body.firstName,
-        sureName: req.body.sureName
     })
 
  try {

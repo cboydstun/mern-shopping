@@ -1,0 +1,251 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+.App {
+  text-align: center;
+  background-color: rgb(178, 189, 192);
+  height: auto;
+  min-height: 100vh;
+}
+
+.header {
+  display: flex;
+  background-color: lightgray;
+  height: 5rem;
+  align-items: center;
+}
+
+.body {
+  background-color: rgb(178, 189, 192);
+  height: 85vh;
+}
+
+.productList {
+  display: block;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-flow: wrap;
+  margin-top: 50px;
+}
+
+.product {
+  margin-top: 30px;
+  margin-left: 10px;
+  margin-right: 10px;
+  background-color: whitesmoke;
+  border-radius: 4px;
+  padding: 10px;
+  text-align: left;
+  transition: transform 0.1s;
+  max-width: 250px;
+}
+
+.product button {
+  width: 100%;
+  border-radius: 2px;
+  border: none;
+  background-color: lightgray;
+  margin-top: 10px;
+}
+
+.product:hover {
+  transform: scale(1.05);
+}
+
+.logo {
+  font-family: 'Playfair Display', serif;
+  letter-spacing: 2px;
+  padding-left: 40px;
+  padding-right: 20px;
+  font-size: 25px;
+  background-color: rgb(173, 170, 170);
+  height: 100%;
+  color: rgb(66, 70, 77);
+}
+
+.logo:hover {
+  cursor: pointer;
+  background-color: rgb(129, 123, 123);
+}
+
+.logo p {
+  margin-top: 40px;
+}
+
+.search-field {
+  margin-top: 40px;
+}
+
+.cartIcon {
+  background-color: white;
+  height: 32px;
+  width: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.cartIcon:hover {
+  cursor: pointer;
+}
+
+.loginButtons {
+  display: flex;
+  margin-left: 600px;
+}
+
+.navBtn {
+  margin: 15px;
+  padding: 8px;
+  border-radius: 3px;
+}
+
+.navBtn:hover {
+  background-color: rgb(190, 184, 184);
+}
+
+button {
+  padding-left: 70px;
+  padding-right: 70px;
+  height: 2rem;
+  border: none;
+}
+
+.btn-back {
+  width: 212px;
+  padding: 0px;
+  border-radius: 4px;
+  margin-top: 10px;
+}
+
+.btn-signOut {
+  border-color: white;
+  background-color: white;
+}
+
+button:hover {
+  cursor: pointer;
+  background-color: rgb(228, 220, 220);
+}
+
+.btn-login {
+  width: 10rem;
+  height: 2rem;
+  margin-top: 1rem;
+}
+
+.btn-search {
+  height: 2.3rem;
+  width: 2.3rem;
+  padding: 5px;
+  border-radius: 14px;
+  margin-left: 7px;
+}
+
+BiSearchAlt2 {
+  margin-top: 10px;
+}
+
+.loginForm {
+  margin-top: 15rem;
+  display: inline-grid;
+}
+
+input {
+  height: 1.7rem;
+  background-color: rgb(248, 238, 238);
+  border: none;
+  padding: 5px;
+  margin-top: 10px;
+  border-radius: 5px;
+}
+
+.search {
+  margin-top: 0px;
+}
+
+.productName {
+  margin-top: 100px;
+  margin-bottom: 10px;
+  font-size: 20px;
+}
+
+.productDescription {
+  margin-top: 5px;
+  margin-bottom: 10px;
+  font-style: italic;
+}
+
+.productPrice {
+  font-weight: bold;
+}
+
+a {
+  text-decoration: none;
+  color: rgb(66, 70, 77);
+}
+
+.firstPageBtn {
+  background-color: rgb(151, 142, 142);
+  height: 30px;
+  margin-top: 10px;
+  border-radius: 4px;
+}
+
+.firstPageBtn:hover {
+  background-color: rgb(202, 195, 195);
+}
+
+.removeCartItemBtn,
+.addCartItemBtn {
+  width: 20px;
+  padding: 0px;
+  background-color: rgb(168, 66, 66);
+  color: white;
+  border-radius: 20px;
+  height: 25px;
+  margin-left: 10px;
+}
+
+.addCartItemBtn {
+  background-color: green;
+}
+
+.cartItem {
+  margin-top: 10px;
+}
+
+.purchaseSection {
+  margin-top: 100px;
+}
+
+.purchaseNavigation {
+  margin-top: 50px;
+}
+
+.btn {
+  border-radius: 4px;
+  margin-top: 10px;
+  background-color: rgb(45, 158, 45);
+  color: white;
+}
+
+.btn:hover {
+  background-color: green;
+}
+
+.productList {
+  max-width: 950px;
+  margin-left: 25%;
+}
+
+.navBtn {
+  transition: transform 0.1s;
+}
+
+.navBtn:hover {
+  transform: scale(1.1);
+}
